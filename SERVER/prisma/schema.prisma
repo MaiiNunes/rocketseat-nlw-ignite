@@ -31,7 +31,6 @@ model HabitWeekDays {
   week_day Int
 
   habit   Habit  @relation(fields: [habit_id], references: [id])
-  habitId String
 
   @@unique([habit_id, week_day])
   @@map("habit_week_days")
