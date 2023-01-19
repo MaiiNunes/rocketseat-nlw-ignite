@@ -18,10 +18,10 @@ export function Checkbox({title, checked = false, ...rest }: Props){
                         <Feather name="check" size={20} color={colors.white}/>
                     </View>
                     :
-                    <View className=" h-9 w-8 bg-zinc-900 rounded-lg"/>
+                    <View className=" h-9 w-8 bg-zinc-900 rounded-lg border-2 border-zinc-800"/>
             }
 
-            <Text className="text-white text-base ml-3">
+            <Text className="text-white text-base ml-3 font-semibold">
                 {title}
             </Text>
         </TouchableOpacity>
