@@ -14,19 +14,21 @@ export function NewHabitForm() {
     async function createNewHabit(event: FormEvent){
         event.preventDefault()
 
-        if (!title || weekDays.length === 0){
-            return
+        try{
+            if (!title.trim() || weekDays.length ===0){
+                return alert('Informe o novo hábito e a recorrência!')
+            }
+
+           await api.post('/habits', {title, weekDays});
+           setTitle('');
+           setWeekDays([]);
+
+           alert(' Hábito criado com sucesso!');
+
+        } catch (error) {
+            console.log(error);
+            alert('Ops, Não foi possível criar o novo hábito.')
         }
-
-        await api.post('habits', {
-            title,
-            weekDays,
-        })
-
-        setTitle('')
-        setWeekDays([])
-
-        alert('Hábito criado com sucesso!')
     }
 
     function handleToggleWeekDay(weekDay: number){
