@@ -2,12 +2,11 @@
 
 Projeto desenvolvido durante o evento NLW Setup da trilha ignite, promovido pela Rocketseat.
 
-<h3>Web</h3>
+<h3>Web</h3>(2 telas)
 
-![image](https://cdn.discordapp.com/attachments/796447278566998106/1067503083761971250/image.png)
-![image](https://cdn.discordapp.com/attachments/796447278566998106/1067502991394996334/image.png)
+![image](https://cdn.discordapp.com/attachments/796447278566998106/1096126621703995462/web.jpg)
 
 ##
 <h3>Mobile</h3> (4 telas)
 
-![image](https://cdn.discordapp.com/attachments/796447278566998106/1067503693324365874/mobile_.jpg)
+![image](https://cdn.discordapp.com/attachments/796447278566998106/1096126622014394458/mobile.jpg)
